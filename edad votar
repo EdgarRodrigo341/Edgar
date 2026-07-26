@@ -1,0 +1,11 @@
+
+print("=== Verificar Edad para Votar ===")
+
+edad = int(input("Ingrese su edad: "))
+
+if edad < 0:
+    print("Edad no válida.")
+elif edad >= 18:
+    print("Puede votar.")
+else:
+    print("No puede votar.")
