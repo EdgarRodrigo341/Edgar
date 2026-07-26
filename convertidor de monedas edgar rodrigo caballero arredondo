@@ -1,0 +1,43 @@
+
+print("=== Conversor de Monedas ===")
+
+pesos = float(input("Cantidad en pesos mexicanos: "))
+
+print("""
+1. USD
+2. EUR
+3. THB
+4. JPY
+5. KRW
+6. AUD
+7. PEN
+8. CAD
+9. VES
+10. ARS
+""")
+
+opcion = input("Seleccione una moneda: ")
+
+match opcion:
+    case "1":
+        print("USD:", round(pesos / 18.5, 2))
+    case "2":
+        print("EUR:", round(pesos / 21.5, 2))
+    case "3":
+        print("THB:", round(pesos / 0.57, 2))
+    case "4":
+        print("JPY:", round(pesos / 0.13, 2))
+    case "5":
+        print("KRW:", round(pesos / 0.014, 2))
+    case "6":
+        print("AUD:", round(pesos / 12.3, 2))
+    case "7":
+        print("PEN:", round(pesos / 5.1, 2))
+    case "8":
+        print("CAD:", round(pesos / 13.4, 2))
+    case "9":
+        print("VES:", round(pesos / 0.50, 2))
+    case "10":
+        print("ARS:", round(pesos / 0.018, 2))
+    case _:
+        print("Opción no válida.")
