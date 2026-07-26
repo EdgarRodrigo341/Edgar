@@ -1,0 +1,26 @@
+
+print("=== Información ===")
+
+print("""
+1. Artista
+2. Película
+3. Serie
+4. Libro
+5. Videojuego
+""")
+
+opcion = input("Seleccione una opción: ")
+
+match opcion:
+    case "1":
+        print("Artista: Shakira es una cantante y compositora colombiana.")
+    case "2":
+        print("Película: Interstellar fue dirigida por Christopher Nolan.")
+    case "3":
+        print("Serie: Stranger Things es una serie de ciencia ficción de Netflix.")
+    case "4":
+        print("Libro: Don Quijote de la Mancha fue escrito por Miguel de Cervantes.")
+    case "5":
+        print("Videojuego: Minecraft es un juego de construcción y supervivencia.")
+    case _:
+        print("Opción no válida.")
