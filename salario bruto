@@ -1,0 +1,8 @@
+salario_bruto = float(input("Ingrese el salario bruto: "))
+impuestos = float(input("Ingrese el porcentaje de impuestos: "))
+deducciones = float(input("Ingrese las deducciones: "))
+
+monto_impuestos = salario_bruto * (impuestos / 100)
+salario_neto = salario_bruto - monto_impuestos - deducciones
+
+print("El salario neto es:", salario_neto)
