@@ -1,0 +1,17 @@
+
+import random
+
+secreto = random.randint(1, 100)
+
+print("Adivine el número entre 1 y 100.")
+
+while True:
+    intento = int(input("Ingrese su intento: "))
+
+    if intento < secreto:
+        print("El número es mayor.")
+    elif intento > secreto:
+        print("El número es menor.")
+    else:
+        print("¡Felicidades! Adivinaste el número.")
+        break
