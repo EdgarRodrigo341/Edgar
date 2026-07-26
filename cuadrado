@@ -1,0 +1,12 @@
+
+cantidad = int(input("¿Cuántos cuadrados desea generar?: "))
+
+i = 1
+
+while True:
+    print(i ** 2)
+
+    i += 1
+
+    if i > cantidad:
+        break
