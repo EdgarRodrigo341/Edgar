@@ -1,0 +1,20 @@
+
+print("=== Precio con Descuento ===")
+
+precio = float(input("Ingrese el precio: "))
+
+if precio < 0:
+    print("Precio inválido.")
+elif precio <= 100:
+    descuento = 0.05
+elif precio <= 200:
+    descuento = 0.10
+elif precio <= 500:
+    descuento = 0.15
+else:
+    descuento = 0.20
+
+if precio >= 0:
+    total = precio - (precio * descuento)
+    print("Descuento:", descuento * 100, "%")
+    print("Total a pagar:", round(total, 2))
