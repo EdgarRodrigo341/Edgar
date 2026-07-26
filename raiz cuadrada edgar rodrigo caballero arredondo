@@ -1,0 +1,13 @@
+
+import math
+
+def raiz_cuadrada(numero):
+    return math.sqrt(numero)
+
+
+num = float(input("Ingrese un número: "))
+
+if num >= 0:
+    print("La raíz cuadrada es:", raiz_cuadrada(num))
+else:
+    print("No se puede calcular la raíz cuadrada de un número negativo.")
