@@ -1,0 +1,10 @@
+
+def reemplazar(texto, viejo, nuevo):
+    return texto.replace(viejo, nuevo)
+
+
+texto = input("Ingrese un texto: ")
+caracter1 = input("Carácter a reemplazar: ")
+caracter2 = input("Nuevo carácter: ")
+
+print("Resultado:", reemplazar(texto, caracter1, caracter2))
