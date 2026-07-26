@@ -1,0 +1,15 @@
+
+print("=== Calculadora de Calificación Final ===")
+
+parciales = float(input("Calificación de parciales: "))
+proyecto = float(input("Calificación del proyecto: "))
+examen = float(input("Calificación del examen: "))
+
+if (0 <= parciales <= 100 and
+    0 <= proyecto <= 100 and
+    0 <= examen <= 100):
+
+    final = (parciales * 0.40) + (proyecto * 0.30) + (examen * 0.30)
+    print("Calificación final:", round(final, 2))
+else:
+    print("Error: Las calificaciones deben estar entre 0 y 100.")
