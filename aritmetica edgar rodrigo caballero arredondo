@@ -1,0 +1,15 @@
+
+inicio = int(input("Valor inicial: "))
+diferencia = int(input("Diferencia: "))
+terminos = int(input("Cantidad de términos: "))
+
+contador = 0
+
+while True:
+    print(inicio)
+
+    inicio += diferencia
+    contador += 1
+
+    if contador >= terminos:
+        break
