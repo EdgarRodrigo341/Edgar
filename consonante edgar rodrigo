@@ -1,0 +1,17 @@
+
+print("Ingrese una letra. Escriba un espacio para terminar.")
+
+while True:
+    letra = input("Letra: ")
+
+    if letra == " ":
+        break
+
+    if len(letra) != 1:
+        print("Ingrese solo una letra.")
+    elif letra.lower() in "aeiou":
+        print("Es una vocal.")
+    elif letra.isalpha():
+        print("Es una consonante.")
+    else:
+        print("No es una letra.")
